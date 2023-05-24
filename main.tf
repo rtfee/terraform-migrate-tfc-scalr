@@ -27,7 +27,6 @@ resource "null_resource" "migrate" {
     --tf-organization=${var.tf_organization} \
     --scalr-hostname=${var.scalr_hostname} \
     --scalr-token=${var.scalr_token} \
-    --scalr-environment=${var.scalr_environment} \
     --skip-workspace-creation=${var.skip_workspace_creation} \
     --skip-backend-secrets=${var.skip_backend_secrets} \
     -a ${var.scalr_account_id} \
